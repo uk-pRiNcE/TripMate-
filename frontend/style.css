@@ -182,14 +182,14 @@ body {
 }
 /* LOGIN PAGE */
 
-.login-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("hero.jpg") center/cover no-repeat;
+.login-body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+position:relative;
+overflow:hidden;
 }
-
 .login-container {
   background: rgba(255,255,255,0.95);
   padding: 40px;
@@ -252,4 +252,14 @@ text-decoration:none;
 
 .signup-text a:hover{
 text-decoration:underline;
+
+}
+.login-video{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
 }
