@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TripMate AI Assistant</title>
+
+<link rel="stylesheet" href="chat.css">
+
+</head>
+
+<body>
+
+
+<h1 style="text-align:center;margin-top:80px;">
+TripMate Travel Planner
+</h1>
+
+
+
+<!-- Chat Button -->
+
+<div class="chat-button" onclick="toggleChat()">
+💬
+</div>
+
+
+
+<!-- Chat Box -->
+
+<div class="chat-container" id="chatContainer">
+
+<div class="chat-header">
+
+TripMate AI Assistant
+
+<span onclick="toggleChat()">✖</span>
+
+</div>
+
+
+
+<div class="chat-messages" id="chatMessages">
+
+<div class="bot-message">
+Hello 👋 I am your TripMate AI.  
+How can I help you plan your trip?
+</div>
+
+</div>
+
+
+
+<div class="chat-input">
+
+<input type="text" id="userInput" placeholder="Ask about your trip...">
+
+<button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+
+<script src="chat.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TripMate Budget Tracker</title>
+
+<link rel="stylesheet" href="budget.css">
+
+</head>
+
+<body>
+
+<header class="header">
+
+<h1>TripMate Budget Planner</h1>
+<p>Track Expenses & Save Money Smartly</p>
+
+</header>
+
+
+<section class="budget-container">
+
+
+<div class="budget-form">
+
+<h2>Add Expense</h2>
+
+<input type="text" id="expenseName" placeholder="Expense Name (Hotel, Food...)">
+
+<input type="number" id="expenseAmount" placeholder="Amount ₹">
+
+<select id="expenseCategory">
+<option>Transport</option>
+<option>Hotel</option>
+<option>Food</option>
+<option>Activities</option>
+<option>Shopping</option>
+</select>
+
+<button onclick="addExpense()">Add Expense</button>
+
+</div>
+
+
+
+<div class="budget-summary">
+
+<h2>Budget Summary</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Budget</h3>
+<p id="totalBudget">₹50000</p>
+</div>
+
+<div class="card">
+<h3>Total Spent</h3>
+<p id="totalSpent">₹0</p>
+</div>
+
+<div class="card">
+<h3>Remaining</h3>
+<p id="remaining">₹50000</p>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="expense-list">
+
+<h2>Expense List</h2>
+
+<ul id="expenseList">
+
+</ul>
+
+</div>
+
+
+<div class="saving-tips">
+
+<h2>AI Money Saving Tips</h2>
+
+<div id="tips">
+
+<p>Use public transport instead of taxis.</p>
+<p>Book hotels in advance for better discounts.</p>
+<p>Travel during off-season to save money.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<script src="budget.js"></script>
+
+</body>
+
+</html>
