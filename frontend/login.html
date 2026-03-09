@@ -12,34 +12,33 @@
 
 <body class="login-body">
 
-  <div class="login-container">
+<!-- Background Video -->
+<video autoplay muted loop class="login-video">
+  <source src="loginvideo.mp4" type="video/mp4">
+</video>
 
-    <h2>Welcome to TripMate</h2>
-    <p>Login to continue your journey</p>
-<form id="loginForm">
+<div class="login-container">
 
-<input type="email" placeholder="Email Address" required>
+  <h2>Welcome Back</h2>
+  <p>Login to your account</p>
 
-<input type="password" placeholder="Password" required>
+  <form>
+    <input type="email" placeholder="Enter Email" required>
+    <input type="password" placeholder="Enter Password" required>
 
-<button type="submit" class="login-btn">
-Login
-</button>
+    <button type="submit" class="login-btn">Login</button>
+  </form>
 
-</form>
+  <p class="signup-text">
+    Don't have an account?
+    <a href="signup.html">Sign Up</a>
+  </p>
 
-<p class="signup-text">
-Don't have an account?
-<a href="signup.html">Sign Up</a>
-</p>
-
-    <p class="back-home">
-      <a href="index.html">← Back to Home</a>
-    </p>
-
+  <div class="back-home">
+    <a href="index.html">← Back to Home</a>
   </div>
 
-  <script src="js/main.js"></script>
+</div>
 
 </body>
 </html>
