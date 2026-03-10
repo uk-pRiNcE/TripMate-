@@ -1,118 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TripMate Planner</title>
+
+<title>TripMate | Planning</title>
+
 <link rel="stylesheet" href="plan.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<header class="header">
-<h1>TripMate</h1>
-<p>Plan Your Perfect Journey</p>
+<!-- BACKGROUND VIDEO -->
+
+<div class="video-container">
+
+<video autoplay muted loop class="background-video">
+<source src="videos.mp4" type="video/mp4">
+</video>
+
+</div>
+
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">TripMate</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="plan.html">Planning</a>
+<a href="budget.html">Budget</a>
+<a href="chat.html">AI Chat</a>
+</nav>
+
 </header>
 
-<section class="planner-container">
-
-<div class="steps">
-<div class="step active">1. Destination</div>
-<div class="step">2. Preferences</div>
-<div class="step">3. Budget</div>
-<div class="step">4. Generate</div>
-</div>
-
-<form id="tripForm">
-
-<div class="form-section">
-
-<label>Destination</label>
-<input type="text" placeholder="Where do you want to go?" required>
-
-<label>Start Date</label>
-<input type="date">
-
-<label>End Date</label>
-<input type="date">
-
-</div>
 
 
-<div class="form-section">
+<!-- HERO SECTION -->
 
-<label>Travel Type</label>
+<section class="hero">
 
-<div class="options">
-<button type="button" class="option">Solo</button>
-<button type="button" class="option">Group</button>
-</div>
+<h1>Plan Your Perfect Journey</h1>
 
-<label>Budget Type</label>
-
-<div class="options">
-<button type="button" class="option">Budget</button>
-<button type="button" class="option">Standard</button>
-<button type="button" class="option">Luxury</button>
-</div>
-
-</div>
-
-
-<div class="form-section">
-
-<label>Interests</label>
-
-<div class="checkbox-group">
-
-<label><input type="checkbox"> Adventure</label>
-<label><input type="checkbox"> Food</label>
-<label><input type="checkbox"> Culture</label>
-<label><input type="checkbox"> Nature</label>
-<label><input type="checkbox"> Nightlife</label>
-
-</div>
-
-</div>
-
-
-<div class="form-section">
-
-<label>Preferred Transport</label>
-
-<select>
-<option>Flight</option>
-<option>Train</option>
-<option>Bus</option>
-<option>Car</option>
-</select>
-
-</div>
-
-
-<button class="generate-btn" type="submit">
-Generate AI Trip Plan
-</button>
-
-</form>
+<p>TripMate helps you design smarter and more memorable trips</p>
 
 </section>
 
 
-<section class="result-section">
 
-<h2>Your AI Trip Preview</h2>
+<!-- PLANNING CARDS -->
 
-<div id="tripResult">
+<section class="planning-section">
 
-<p>Your trip plan will appear here...</p>
+<div class="cards-container">
+
+
+<!-- CARD 1 -->
+
+<a href="card1.html" class="planning-card">
+
+<img src="itenary.jpg">
+
+<div class="card-content">
+
+<h3>Decided Where To Go?</h3>
+
+<p>Create a complete itinerary and organize every moment of your trip.</p>
+
+<button class="animated-btn">Plan Your Itinerary</button>
+
+</div>
+
+</a>
+
+
+
+<!-- CARD 2 -->
+
+<a href="explore.html" class="planning-card">
+
+<img src="confused.jpg">
+
+<div class="card-content">
+
+<h3>Confused Where To Go?</h3>
+
+<p>Discover destinations that match your travel style and interests.</p>
+
+<button class="animated-btn">Start Planning</button>
+
+</div>
+
+</a>
+
 
 </div>
 
 </section>
-
-
-<script src="plan.js"></script>
 
 </body>
 </html>
