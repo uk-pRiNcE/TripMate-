@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TripMate Planner</title>
+<link rel="stylesheet" href="card1.css">
+</head>
+
+<body>
+
+<header class="header">
+<h1>TripMate</h1>
+<p>Plan Your Perfect Journey</p>
+</header>
+
+<section class="planner-container">
+
+<div class="steps">
+<div class="step active">1. Destination</div>
+<div class="step">2. Preferences</div>
+<div class="step">3. Budget</div>
+<div class="step">4. Generate</div>
+</div>
+
+<form id="tripForm">
+
+<div class="form-section">
+
+<label>Destination</label>
+<input type="text" placeholder="Where do you want to go?" required>
+
+<label>Start Date</label>
+<input type="date">
+
+<label>End Date</label>
+<input type="date">
+
+</div>
+
+
+<div class="form-section">
+
+<label>Travel Type</label>
+
+<div class="options">
+<button type="button" class="option">Solo</button>
+<button type="button" class="option">Group</button>
+</div>
+
+<label>Budget Type</label>
+
+<div class="options">
+<button type="button" class="option">Budget</button>
+<button type="button" class="option">Standard</button>
+<button type="button" class="option">Luxury</button>
+</div>
+
+</div>
+
+
+<div class="form-section">
+
+<label>Interests</label>
+
+<div class="checkbox-group">
+
+<label><input type="checkbox"> Adventure</label>
+<label><input type="checkbox"> Food</label>
+<label><input type="checkbox"> Culture</label>
+<label><input type="checkbox"> Nature</label>
+<label><input type="checkbox"> Nightlife</label>
+
+</div>
+
+</div>
+
+
+<div class="form-section">
+
+<label>Preferred Transport</label>
+
+<select>
+<option>Flight</option>
+<option>Train</option>
+<option>Bus</option>
+<option>Car</option>
+</select>
+
+</div>
+
+
+<button class="generate-btn" type="submit">
+Generate AI Trip Plan
+</button>
+
+</form>
+
+</section>
+
+
+<section class="result-section">
+
+<h2>Your AI Trip Preview</h2>
+
+<div id="tripResult">
+
+<p>Your trip plan will appear here...</p>
+
+</div>
+
+</section>
+
+
+<script src="card1.js"></script>
+
+</body>
+</html>
