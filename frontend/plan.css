@@ -236,30 +236,50 @@ transform:translateY(0);
 }
 
 }
-/* MOBILE RESPONSIVE NAVBAR */
+/* DEFAULT NAV */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* HAMBURGER ICON */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
 @media (max-width: 768px) {
 
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .navbar .logo {
-    margin-bottom: 10px;
-    font-size: 20px;
+  .menu-toggle {
+    display: block;
   }
 
   .navbar nav {
-    display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0,0,0,0.8);
     width: 100%;
+    flex-direction: column;
     text-align: center;
+    display: none;
   }
 
   .navbar nav a {
-    padding: 10px;
-    width: 100%;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    display: block;
+    color: white;
+  }
+
+  .navbar nav.active {
+    display: flex;
   }
 }
