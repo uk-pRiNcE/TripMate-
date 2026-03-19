@@ -236,4 +236,30 @@ transform:translateY(0);
 }
 
 }
+/* MOBILE RESPONSIVE NAVBAR */
+@media (max-width: 768px) {
 
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .navbar .logo {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .navbar nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar nav a {
+    padding: 10px;
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+}
